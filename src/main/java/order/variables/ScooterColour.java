@@ -1,4 +1,4 @@
-package OrderDetails;
+package order.variables;
 
 public class ScooterColour {
     public static final String BLACK_COLOUR = "black";

@@ -1,4 +1,4 @@
-package OrderDetails;
+package order.variables;
 
 public class OrderButtons {
     public static final String HEADER_ORDER_BUTTON = "header";

@@ -1,4 +1,4 @@
-package OrderDetails;
+package order.variables;
 
 public class OrderPeriod {
     public static final String ONE_DAY_PERIOD = "сутки";

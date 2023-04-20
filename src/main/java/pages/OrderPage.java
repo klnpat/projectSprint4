@@ -21,6 +21,8 @@ public class OrderPage {
     private final By btnNext = By.xpath(".//button[text()='Далее']");
     //Поле "Дата"
     private final By inputDate = By.xpath(".//input[@placeholder='* Когда привезти самокат']");
+    //Верхний заголовок
+    private final By orderHeader = By.className("Order_Header__BZXOb");
     //Поле "Срок аренды"
     private final By dropdownPeriod = By.className("Dropdown-control");
     //Поле "Комментарий"
@@ -69,7 +71,7 @@ public class OrderPage {
     }
 
     public void clickSomewhere() {
-        driver.findElement(By.className("Order_Header__BZXOb")).click();
+        driver.findElement(orderHeader).click();
     }
 
     public void setDate(String date) {

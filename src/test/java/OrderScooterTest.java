@@ -1,7 +1,7 @@
-import OrderDetails.OrderButtons;
-import OrderDetails.ScooterColour;
+import order.variables.OrderButtons;
+import order.variables.ScooterColour;
 import config.AppConfig;
-import OrderDetails.OrderPeriod;
+import order.variables.OrderPeriod;
 import config.WebDriverConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.hamcrest.MatcherAssert;
@@ -44,7 +44,7 @@ public class OrderScooterTest {
         this.comment = comment;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Заказ самоката: {0} {1}")
     public static Object[] orderScooter() {
         return new Object[][]{
                 {OrderButtons.HEADER_ORDER_BUTTON, "Шерлок", "Холмс", "Бейкер-стрит, 221Б", "Театральная", "82212212121", "28.02.2023", OrderPeriod.FOUR_DAYS_PERIOD, ScooterColour.BLACK_COLOUR, ""},
